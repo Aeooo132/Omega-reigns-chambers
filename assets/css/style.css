@@ -1,0 +1,284 @@
+/* Google Font Import - must be at the top */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Dancing+Script:wght@400;700&display=swap');
+
+body {
+    background-color: #1a2a4f; /* same deep navy as Area of Practice */
+    color: #474747;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #0b1c3d, #1a2a4f); /* Professional navy gradient */
+    padding: 4rem 0;
+    color: white;
+}
+
+.hero-content {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.2s ease forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-section h1,.about-hero h1 {
+    font-family: 'Dancing Script', cursive !important;
+    color: black !important;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Welcome Section */
+.welcome-section {
+    background: rgba(255, 255, 255, 0.2); /* Lighter transparency to blend */
+    padding: 1px 0.6px;
+    text-align: center;
+    color: 0b1c3d;
+}
+
+.welcome-section h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #0b1c3d !important; /* Professional navy */
+}
+
+.navbar-brand,
+.nav-link {
+    font-family: 'Merriweather', serif;
+}
+
+.nav-link {
+    color: white !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #d4af37 !important; /* Gold hover */
+}
+
+/* Custom Mobile Navbar Toggler */
+.navbar-toggler {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: transparent !important;
+    padding: 0.25rem 0.5rem;
+}
+
+.navbar-toggler i {
+    font-size: 1.6rem;
+    color: #d4af37; /* Gold */
+}
+
+/* Services Section */
+.services-section {
+    background-color: #0b1c3d;
+    color: white;
+}
+
+/* Glassmorphism Card Effect */
+.glass-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Buttons */
+.btn {
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+/* Gold buttons with blue hover */
+.btn-gold {
+    background-color: #d4af37; /* Gold */
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-gold:hover {
+    background-color: #0b1c3d; /* Navy Blue */
+    color: white;
+}
+
+.who-are-we {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem; /* adjust size if needed */
+    color: white; /* keep professional tone */
+}
+.who-are-we-section {
+    padding-left: 5rem;
+}
+
+@media (min-width: 768px) {
+    .who-are-we-section {
+        padding-left: 3rem; /* a bit more space on desktop */
+    }
+}
+/* Force Dancing Script + black for the hero heading */
+.hero-title {
+    font-family: 'Dancing Script', cursive !important;
+    color: #000 !important;
+    font-weight: 700; /* works fine with display-4 size */
+}
+/* CTA Section */
+.cta {
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center */
+  text-align: center;
+  background: linear-gradient(135deg, #f9f9f9, #e6e9f0);
+  padding: 0.4rem;
+}
+
+.cta-content {
+  max-width: 700px;
+}
+
+.cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #0b3d91;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.cta .btn-gold {
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+}
+/* About Page Section (Our History, Who Are We, etc.) */
+.about-section {
+  display: flex;
+  justify-content: space-between; /* keeps image and text apart */
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.about-section img {
+  width: 100%;
+  max-width: 550px;  /* enlarged image size */
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Text content aligned to the extreme right */
+.about-text {
+  flex: 1;
+  text-align: right;    /* push text to right */
+  direction: ltr;       /* text flows right-to-left */
+}
+
+.about-text h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.8rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.15rem;
+  color: #dcdcdc;  /* lighter grey for readability */
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+/* Override for Our Values cards only */
+.values-section .glass-card {
+  background-color: #e6e6e6 !important; /* solid white */
+  color: #0b3d91 !important;            /* black text */
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.values-section .glass-card h4 {
+  color: #0b3d91 !important;
+  font-weight: 700;
+}
+
+.values-section .glass-card p {
+  color: #333 !important;
+}
+/* Founder Section */
+.founder-section img {
+  width: 70%;              /* shrink image to ~50% */
+  max-width: 250px;        /* keep it neat */
+}
+
+.founder-text {
+  text-align: right;       /* push text to the right */
+  margin-left: auto;       /* ensure alignment */
+  color: #ebe9e9;          /* keep text white */
+}
+
+.founder-text h3 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #b7aeae;
+}
+.founder-text h3 {
+  font-family: 'Poppins', sans-serif; /* Apply Poppins */
+  font-weight: 700;                   /* Bold for emphasis */
+  margin-bottom: 1rem;
+  color: #ebe9e9;
+
+}
+.glass-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.values-section h4 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.values-section p {
+  font-size: 0.95rem;
+  color: #f1f1f1;
+}
+
+/* Make cards breathe better on mobile */
+@media (max-width: 576px) {
+  .glass-card {
+    padding: 2rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+}

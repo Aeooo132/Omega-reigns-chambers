@@ -5,31 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Omega Reigns Chambers - Legal Excellence & Professionalism">
     <title>Omega Reigns Chambers</title>
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" 
-     style="background: linear-gradient(135deg, #0b3d91, #06233dff);">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(135deg, #0b3d91, #06233dff);">
         <div class="container d-flex align-items-center">
-            <!-- Logo & Brand -->
             <a class="navbar-brand d-flex align-items-center" href="index.html" style="font-weight: 700; font-size: 1.2rem;">
-                <img src="assets/img/Lawlogo.png" alt="Logo" width="40" height="40" class="me-2">
+                <img src="assets/img/Lawlogo.png" alt="Logo" width="49" height="49" class="me-2">
             </a>
-
-            <!-- Mobile Toggle -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <!-- Navigation Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav d-flex align-items-center ms-3">
-                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                <ul class="navbar-nav d-flex align-items-center ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white active" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="services.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
@@ -38,100 +29,78 @@
         </div>
     </nav>
 
-    <style>
-        .navbar-nav .nav-link {
-            transition: color 0.3s ease;
-        }
-        .navbar-nav .nav-link:hover {
-            color: #ffcc00 !important; /* Gold accent on hover */
-        }
-    </style>
-        <!-- Hero Section -->
-    <section class="hero-section welcome-section" style="background: linear-gradient(135deg, #f9f9f9, #e6e9f0);">
-        <div class="container hero-content text-dark">
+    <section class="hero-section welcome-section" style="background: linear-gradient(135deg, #f9f9f9, #e6e9f0); padding: 5rem 0;">
+        <div class="container hero-content text-dark text-center">
             <h1 class="display-4 fw-bold who-are-we">Welcome to Omega Reigns Chambers</h1>
-            <p class="lead text-secondary">Delivering justice with integrity, professionalism, and excellence.</p>
-            <a href="services.html" class="btn btn-lg btn-gold">
-                Our Services
-            </a>
+            <p class="lead text-secondary">Justice Defined. Results Delivered.</p>
+            <a href="services.html" class="btn btn-lg btn-gold mt-3">Our Services</a>
         </div>
     </section>
 
-    <!-- About Preview -->
     <section class="py-5">
         <div class="container">
-            <div class="row align-items-center g-4">
+            <div class="row align-items-center g-5">
                 <div class="col-md-6">
                     <img src="assets/img/LawFirm.jpeg" class="img-fluid rounded shadow" alt="Law Office">
                 </div>
-                <div class="col-md-4 who-are-we-section">
-                    <h2 class="who-are-we">Who Are We?</h2>
-                    <p class="text-secondary">
-                        At Omega Reigns Chambers, we pride ourselves on providing top-notch legal services
-                        across multiple areas of law. With years of experience, we ensure every client receives
-                        tailored legal solutions.
+                <div class="col-md-6 who-are-we-section">
+                    <h2 class="who-are-we text-light">Who Are We?</h2>
+                    <p class="text-secondary lead">
+                        Established in 2005, Omega Reigns Chambers is a team of experienced legal minds dedicated to protecting your rights.
                     </p>
-                    <a href="about.html" class="btn btn-lg btn-gold">
-                        Learn More
-                    </a>
+                    <p class="text-secondary">
+                        From corporate registration to complex litigation, we offer personalized attention and aggressive representation.
+                    </p>
+                    <a href="about.html" class="btn btn-gold">Learn More</a>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- Services Preview -->
     <section class="services-section py-5" style="background-color: #0b1c3d;">
         <div class="container text-center">
-            <h2 class="mb-4 text-white">Our Areas of Practice</h2>
+            <h2 class="mb-5 text-white who-are-we">Our Core Areas</h2>
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="card glass-card shadow border-0 h-100" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(6px);">
+                    <div class="card glass-card shadow border-0 h-100">
                         <div class="card-body">
-                            <h5 class="card-title text-light">Corporate Law</h5>
-                            <img src="assets/img/CorporateLaw.jpeg" alt="Corporate Law" class="img-fluid rounded shadow-sm mb-3">
-                            <p class="card-text text-light">Comprehensive legal services for businesses and corporate entities.</p>
+                            <h5 class="card-title text-light fw-bold">Corporate Law</h5>
+                            <img src="assets/img/CorporateandCommercialLaw.jpg" alt="Corporate" class="img-fluid rounded shadow-sm mb-3 mt-2">
+                            <p class="card-text text-light opacity-75">Strategic counsel for business formation, contracts, and litigation.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card glass-card shadow border-0 h-100" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(6px);">
+                    <div class="card glass-card shadow border-0 h-100">
                         <div class="card-body">
-                            <h5 class="card-title text-light">Criminal Defense</h5>
-                            <img src="assets/img/CriminalLaw.jpeg" alt="Criminal Defense" class="img-fluid rounded shadow-sm mb-3">
-                            <p class="card-text text-light">Aggressive representation to protect your rights in criminal matters.</p>
+                            <h5 class="card-title text-light fw-bold">Real Estate</h5>
+                            <img src="assets/img/PropertyLaw.jpg" alt="Property" class="img-fluid rounded shadow-sm mb-3 mt-2">
+                            <p class="card-text text-light opacity-75">Experts in estate financing, leases, and property acquisition.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card glass-card shadow border-0 h-100" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(6px);">
+                    <div class="card glass-card shadow border-0 h-100">
                         <div class="card-body">
-                            <h5 class="card-title text-light">Family Law</h5>
-                            <img src="assets/img/FamilyLaw.jpeg" alt="Family Law" class="img-fluid rounded shadow-sm mb-3">
-                            <p class="card-text text-light">Guidance and support in family disputes and legal matters.</p>
+                            <h5 class="card-title text-light fw-bold">Family Law</h5>
+                            <img src="assets/img/FamilyLaw.jpg" alt="Family" class="img-fluid rounded shadow-sm mb-3 mt-2">
+                            <p class="card-text text-light opacity-75">Compassionate support for divorce, custody, and adoption matters.</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="mt-5">
+                <a href="services.html" class="btn btn-gold">View All Services</a>
+            </div>
         </div>
     </section>
-    <footer class="text-white text-center py-3 mt-5" 
-        style="background: linear-gradient(135deg, #0b3d91, #06233dff);">
-        <p class="mb-0" style="font-size: 0.95rem; letter-spacing: 0.5px;">
-            &copy; <span id="year"></span> 
-            <span style="font-weight: 600; color: #ffffffff;">Omega Reigns Chambers</span>. 
-            All Rights Reserved.
-        </p>
+
+    <footer class="text-white text-center py-4" style="background: linear-gradient(135deg, #0b3d91, #06233dff);">
+        <p class="mb-0">&copy; <span id="year"></span> <span class="fw-bold">Omega Reigns Chambers</span>. All Rights Reserved.</p>
     </footer>
 
-    <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-
-
-    <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
     <script src="assets/js/script.js"></script>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>

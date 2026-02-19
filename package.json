@@ -8,8 +8,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "nodemailer": "^8.0.1"
-  }
+  },
+  "description": ""
 }

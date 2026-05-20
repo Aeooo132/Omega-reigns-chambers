@@ -29,7 +29,7 @@ module.exports = async function handler(req, res) {
         // 4. Send Notification to your Personal Email
         await transporter.sendMail({
             from: `"Web Lead" <${process.env.EMAIL_USER}>`,
-            to: "ayomideabodunrin05@gmail.com",
+            to: "omegareign@gmail.com",
             subject: `New Client Inquiry: ${subject}`,
             html: `<h3>New Potential Client Details</h3>
                    <p><strong>Name:</strong> ${name}</p>

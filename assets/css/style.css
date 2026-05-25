@@ -73,8 +73,11 @@ body {
     color: #d4af37 !important; /* Gold hover */
 }
 
-/* Custom Mobile Navbar Toggler */
-.navbar-toggler {
+/* =========================================
+   Animated Hamburger Icon 
+   ========================================= */
+
+.custom-toggler {
     border: none;
     outline: none;
     box-shadow: none;
@@ -82,10 +85,56 @@ body {
     padding: 0.25rem 0.5rem;
 }
 
-.navbar-toggler i {
-    font-size: 1.6rem;
-    color: #d4af37; /* Gold */
+/* Container for the 3 lines */
+.hamburger-lines {
+    display: block;
+    width: 28px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
 }
+
+/* Base styling for all 3 lines */
+.hamburger-lines .line {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #ffffff; /* The Omega Reigns Gold */
+    border-radius: 3px;
+    opacity: 1;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Initial positions of the lines */
+.hamburger-lines .line1 { top: 0px; }
+.hamburger-lines .line2 { top: 8px; }
+.hamburger-lines .line3 { top: 16px; }
+
+/* ANIMATION TRIGGERS 
+  When Bootstrap opens the menu, it sets aria-expanded="true".
+  We use that to transform the lines into an X.
+*/
+
+/* Rotate top line down */
+.custom-toggler[aria-expanded="true"] .line1 {
+    top: 8px;
+    transform: rotate(135deg);
+}
+
+/* Fade out middle line and slide it left slightly for smoothness */
+.custom-toggler[aria-expanded="true"] .line2 {
+    opacity: 0;
+    left: -10px;
+}
+
+/* Rotate bottom line up */
+.custom-toggler[aria-expanded="true"] .line3 {
+    top: 8px;
+    transform: rotate(-135deg);
+}
+/* ========================================= */
 
 /* Services Section */
 .services-section {

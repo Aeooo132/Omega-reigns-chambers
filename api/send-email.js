@@ -8,11 +8,9 @@ module.exports = async function handler(req, res) {
 
     const { name, email, subject, message } = req.body;
 
-    // 2. Configure the email transporter for iCloud
+    // 2. Configure the email transporter
     const transporter = nodemailer.createTransport({
-        host: 'smtp.mail.me.com',
-        port: 587,
-        secure: false,
+        service: 'gmail',
         auth: {
             user: process.env.EMAIL_USER,
             pass: process.env.EMAIL_PASS,
@@ -28,10 +26,10 @@ module.exports = async function handler(req, res) {
             text: `Hello ${name},\n\nThank you for reaching out. This is to acknowledge receipt of your message regarding "${subject}". Our team will review your inquiry and get back to you shortly.\n\nBest regards,\nOmega Reigns Chambers`,
         });
 
-        // 4. Send Notification to your Firm's Email
+        // 4. Send Notification to your Personal Email
         await transporter.sendMail({
             from: `"Web Lead" <${process.env.EMAIL_USER}>`,
-            to: process.env.EMAIL_USER, // Now dynamically sends to feedback@omegareigns.com
+            to: "omegareigns@gmail.com",
             subject: `New Client Inquiry: ${subject}`,
             html: `<h3>New Potential Client Details</h3>
                    <p><strong>Name:</strong> ${name}</p>
